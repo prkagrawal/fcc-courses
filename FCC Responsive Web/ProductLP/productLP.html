@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header">
+      <div class="logo">
+        <img
+          src="https://w0.pngwave.com/png/931/209/computer-icons-symbol-avatar-logo-person-with-helmut-png-clip-art.png"
+          alt=""
+          id="header-img"
+        />
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#Welcome" class="nav-link">Welcome</a></li>
+          <li><a href="#Features" class="nav-link">Features</a></li>
+          <li><a href="#Pricing" class="nav-link">Pricing</a></li>
+          <!-- <li><a href="#Contact-Us" class="nav-link">Contact Us</a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <div id="container">
+      <div id="Welcome">
+        <p>We are a company</p>
+      </div>
+      <div id="ui">
+        <h2>Subscribe for daily coding problem</h2>
+        <form id="form" action="post">
+          <label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email..."
+              required
+            />
+          </label>
+          <input type="submit" id="submit" />
+        </form>
+      </div>
+
+      <div id="Features">
+        <!-- <video id="video" src="#"></video> -->
+        <iframe
+          id="video"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="Pricing">
+        <div class="product" id="basic">
+          <div class="level">Basic</div>
+          <h2>$1 / Month</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="deluxe">
+          <div class="level">Deluxe</div>
+          <h2>$3 / Month</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

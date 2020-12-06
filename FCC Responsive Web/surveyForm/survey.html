@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <h1 id="title">Please fill the form</h1>
+    <p id="description">This is a survey to help us improve our services</p>
+    <div id="container">
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label"
+            >Name<input
+              type="name"
+              name="name"
+              class="ui"
+              id="name"
+              placeholder="Your name here"
+              required
+          /></label>
+        </div>
+        <div class="form-group">
+          <label id="email-label"
+            >Email<input
+              type="email"
+              class="ui"
+              name="email"
+              id="email"
+              placeholder="Your email here"
+              required
+          /></label>
+        </div>
+        <div class="form-group">
+          <label id="number-label"
+            >Age<input
+              type="number"
+              class="ui"
+              id="number"
+              min="18"
+              max="100"
+              placeholder="Your age"
+          /></label>
+        </div>
+        <div class="form-group">
+          <select name="Occupation" id="dropdown">
+            <option disabled selected value>Select Current Role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="professional">Professional</option>
+            <option value="Company">Company</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>How are you felling</p>
+          <label>
+            <input type="radio" name="user-fellings" value="happy" checked />
+            Happy
+          </label>
+          <label>
+            <input type="radio" name="user-fellings" value="sad" />
+            Sad
+          </label>
+          <label>
+            <input type="radio" name="user-fellings" value="neutral" />
+            Neutral
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Which learning resources do you enjoy</p>
+          <label>
+            <input type="checkbox" name="enjoy" value="FreeCodeCamp" />
+            FreeCodeCamp
+          </label>
+          <label>
+            <input type="checkbox" name="enjoy" value="Medium" />
+            Medium
+          </label>
+          <label>
+            <input type="checkbox" name="enjoy" value="Youtube" />
+            Youtube
+          </label>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your thoughts here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
